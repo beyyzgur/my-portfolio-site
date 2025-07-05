@@ -312,3 +312,52 @@ h2 {
                 transform: translateY(-2000px);
             }
         }
+
+        @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  .text-content {
+    max-width: 90%;
+    animation: none; /* Animasyonu istersen kapat mobilde */
+  }
+
+  .image-content {
+    max-width: 80%;
+    margin-top: 20px;
+    animation: none; /* İstersen animasyonu kaldır */
+  }
+
+  .image-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-cv {
+    width: 80%;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+}
