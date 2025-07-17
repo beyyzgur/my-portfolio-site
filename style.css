@@ -362,3 +362,24 @@ h2 {
     gap: 15px;
   }
 }
+footer {
+  background-color: transparent;
+  text-align: center;
+  padding: 20px 0;
+  color: #aaa;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  z-index: 10;
+  position: relative;
+}
+
+footer a {
+  color: #b266ff !important;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff !important;
+}
