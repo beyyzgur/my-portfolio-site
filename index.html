@@ -4,52 +4,660 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ayse Beyza Gur | hi, i am beyza</title>
+  <meta name="description" content="Ayse Beyza Gur — Computer Engineering student building native iOS experiences with Swift, UIKit, and SwiftUI." />
+  <meta name="theme-color" content="#050014" />
+  <title>hi! i'm beyza</title>
 
   <link rel="icon" href="favicon_io/favicon.ico?v=2" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body style="background-color: black;">
+<body>
 
-    <div class="bg-animation">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
-    </div>
+  <div class="bg-animation" aria-hidden="true">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+  </div>
 
-  <header>
-    <div class="text-content">
-      <h1><span class="wave">✨</span> Hello, I'm <span class="highlight">Beyza</span></h1>
-      <h2>A third grade computer engineering student who wants to be an <span class="highlight">iOS Developer</span>, loves clean UI & smooth UX 💫</h2>
+  <!-- ─────────────── Navigation ─────────────── -->
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a href="#top" class="nav-brand">
+      <span class="wave" aria-hidden="true">✨</span>
+      beyza
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-      <div class="contact">
-        <h3>Contact Me :</h3>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/beyyzgur/" target="_blank"><img src="images/linked-in-alt.svg" alt="LinkedIn"></a>
-          <a href="mailto:beyyzgur@gmail.com" target="_blank"><img src="images/gmail.svg" alt="Gmail"></a>
-          <a href="https://github.com/beyyzgur" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
-          <a href="https://twitter.com/beyyzgur" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
-          <a href="https://instagram.com/beyyzgur" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+  <main id="top">
+
+    <!-- ─────────────── Hero ─────────────── -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-text reveal">
+            <span class="hero-eyebrow">
+               🌱 iOS developer in progress
+            </span>
+            <h1>
+              Hi, I'm <span class="highlight">Beyza</span>
+            </h1>
+            <p class="hero-tagline">
+              A freshly graduated Computer Engineer crafting native <span class="highlight">iOS</span>
+              experiences with Swift | UIKit | SwiftUI, obsessed with clean UI & smooth UX.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="ayse-beyza-gur-portfolyo-cv-ios-developer.pdf" target="_blank" rel="noopener">
+                View Resume
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-ghost" href="#projects">See my work</a>
+            </div>
+
+            <div class="hero-meta">
+              <div class="hero-meta-item">
+                <span class="hero-meta-label">Based in</span>
+                <span class="hero-meta-value">TR</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-label">Focus</span>
+                <span class="hero-meta-value">Native iOS · Mobile</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-label">Status</span>
+                <span class="hero-meta-value">Graduate by August 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-portrait reveal">
+            <img src="paris-sen.jpeg" alt="Portrait of Ayse Beyza Gur" loading="eager" />
+          </div>
         </div>
-        <a class="download-cv" href="aysebeyzagur-cv.pdf" target="_blank"> Open My Resume (CV) </a>
       </div>
-    </div>
 
-    <div class="image-content">
-      <img src="paris-sen.jpeg" alt="my-image">
-    </div>
-    
-  </header>
+      <div class="scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="line"></span>
+      </div>
+    </section>
 
-<footer>
-  © 2026 - <a href="https://github.com/beyyzgur" target="_blank" style="color: #b266ff; text-decoration: none;">Ayse Beyza Gur</a>
-</footer>
+    <!-- ─────────────── About ─────────────── -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">About</span>
+          <h2 class="section-title">An engineer with an eye for detail.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I freshly graduated from Pamukkale University with a degree in Computer Engineering.  I have a strong interest in
+              <span class="highlight">iOS technologies</span>, focusing on native development using Swift, UIKit
+              and SwiftUI. I actively seek opportunities to sharpen my skills in mobile engineering from
+              architecture and networking to interaction design.
+            </p>
+            <p>
+              Beyond coursework, I'm a board member of the Engineering Faculty and a core team member of
+              <span class="accent">PauSiber</span>, a university community that educates students interested in software technologies.
+              Together with my friends, I delivered front end training sessions. 
+              In May 2026, I led an iOS 101 workshop where we built a simple grade calculator app with students interested in iOS development.
+            </p>
+          </div>
+
+          <div class="about-stats reveal-stagger">
+            <div class="stat-card">
+              <div class="stat-value">4+</div>
+              <div class="stat-label">Apps on the App Store that I contributed to during my internship</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">2</div>
+              <div class="stat-label">Software engineering internships</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">3</div>
+              <div class="stat-label">Years at <span class="accent">PauSiber</span></div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">1</div>
+              <div class="stat-label">Erasmus semester in Bialystok, Poland</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────── Experience ─────────────── -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Experience</span>
+          <h2 class="section-title">Where I've been building.</h2>
+          <p class="section-lead">
+            Two internships across Swift and Flutter, shipping real features into production apps
+            used by real people.
+          </p>
+        </div>
+
+        <div class="timeline reveal-stagger">
+          <div class="timeline-item is-current">
+            <div class="timeline-meta">
+              <span>Jun 2026 - Aug 2026</span>
+              <span class="sep" aria-hidden="true"></span>
+              <span>Ankara, TR</span>
+              <span class="sep" aria-hidden="true"></span>
+              <span>Internship</span>
+            </div>
+            <h3>Başarsoft Bilgi Teknolojileri A.Ş.</h3>
+            <div class="timeline-role">Mobile Developer Intern</div>
+            <ul>
+              <li>Developed a Flutter GIS app for field inventory. Map based drawing, dynamic forms, geometry rule validation and offline first sync backed by Supabase &amp; SQLite.</li>
+              <li>Built a NMEA parser library in C++ for GNSS receiver data, designed to be reusable across Flutter, Java, React and Swift.</li>
+              <li>Developed a Flutter Emergency Assembly app, managing development cycle and presenting the final MVP with my team.</li>
+              <li>Applied MVVM with Riverpod, following SOLID and DRY principles.</li>
+              <li>Collaborated in a team with Git branch / PR / code review workflow.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span>Jun 2025 - Aug 2025</span>
+              <span class="sep" aria-hidden="true"></span>
+              <span>Denizli, TR</span>
+              <span class="sep" aria-hidden="true"></span>
+              <span>Internship</span>
+            </div>
+            <h3>HitMaker</h3>
+            <div class="timeline-role">iOS Developer Intern</div>
+            <ul>
+              <li>Contributed to <strong>4 production iOS apps</strong> on the App Store, shipping features and custom screens on 1–2 week cycles.</li>
+              <li>Gained hands-on experience with SwiftUI.</li>
+              <li>Improved UI/UX in shipping products and integrated RESTful APIs, handling data flow cleanly between views and models.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────── Projects ─────────────── -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Selected work</span>
+          <h2 class="section-title">Projects I've built &amp; shipped.</h2>
+          <p class="section-lead">
+            Personal projects and internship apps. Each one a chance to try a new pattern, API, or piece of
+            the iOS stack.
+          </p>
+        </div>
+
+        <div class="projects reveal-stagger">
+
+          <article class="project project-featured">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🌐</div>
+              <span class="project-tag">Swift Library</span>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/NetworkKit" target="_blank" rel="noopener" aria-label="NetworkKit on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>NetworkKit</h3>
+            <p>
+              Lightweight, protocol-driven HTTP networking library built with Swift 6. It provides a clean
+              endpoint abstraction, typed async/await requests, common HTTP methods and structured network
+              errors for modern iOS applications.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Swift 6</span>
+              <span class="stack-chip">iOS 17+</span>
+              <span class="stack-chip">Async/Await</span>
+              <span class="stack-chip">Protocol Oriented</span>
+              <span class="stack-chip">Generics</span>
+              <span class="stack-chip">REST</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🔌</div>
+              <span class="project-tag">Basarsoft · Library</span>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/BS-NetworkKit-Dart" target="_blank" rel="noopener" aria-label="BS NetworkKit on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>BS-NetworkKit</h3>
+            <p>
+              Transport-independent networking library for Dart and Flutter with package:http and Dio
+              adapters. It supports typed decoding, interceptors, single-flight token refresh, safe retries,
+              cancellation, streaming, multipart uploads and progress tracking across Dart VM and web.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Dart</span>
+              <span class="stack-chip">Flutter</span>
+              <span class="stack-chip">Adapter Pattern</span>
+              <span class="stack-chip">Interceptors</span>
+              <span class="stack-chip">Dio · HTTP</span>
+              <span class="stack-chip">Testing</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">📍</div>
+              <span class="project-tag">Basarsoft · Teamwork</span>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/Emergency-Assembly-Flutter-App" target="_blank" rel="noopener" aria-label="Emergency Assembly on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Emergency Assembly</h3>
+            <p>
+              Flutter app that guides citizens to nearby emergency assembly areas with walking and driving
+              routes. It combines Google authentication, map-based discovery, needs reporting, safety
+              check-ins and push notifications in a feature-based architecture.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Flutter</span>
+              <span class="stack-chip">Riverpod</span>
+              <span class="stack-chip">Firebase</span>
+              <span class="stack-chip">flutter_map</span>
+              <span class="stack-chip">go_router</span>
+              <span class="stack-chip">OSRM</span>
+            </div>
+          </article>
+
+          <article class="project project-featured">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🗺️</div>
+              <span class="project-tag">Basarsoft · GIS</span>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/GeoCanvas-CBS-Flutter-App" target="_blank" rel="noopener" aria-label="GeoCanvas on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>GeoCanvas: Mobile GIS Field Inventory</h3>
+            <p>
+              Offline-first mobile GIS app for collecting field inventory. Users can draw and edit point,
+              line and polygon geometries, complete dynamic attribute forms, and automatically sync local
+              SQLite records with Supabase when connectivity returns.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Flutter</span>
+              <span class="stack-chip">Dart</span>
+              <span class="stack-chip">Riverpod</span>
+              <span class="stack-chip">Supabase</span>
+              <span class="stack-chip">SQLite</span>
+              <span class="stack-chip">flutter_map</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🛰️</div>
+              <span class="project-tag">Basarsoft · Library</span>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/nmea-0183-parser-cpp" target="_blank" rel="noopener" aria-label="NMEALib on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>NMEALib: NMEA 0183 Parser</h3>
+            <p>
+              Platform-independent C++ library that parses streamed GNSS data into UTM coordinates,
+              accuracy metrics and GPS, DGPS or RTK fix states. A shared C API powers ready-to-use bindings
+              for Flutter, Android, iOS and React via FFI, JNI, Swift and WebAssembly.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">C++17</span>
+              <span class="stack-chip">NMEA 0183</span>
+              <span class="stack-chip">GNSS · RTK</span>
+              <span class="stack-chip">C API</span>
+              <span class="stack-chip">FFI · JNI</span>
+              <span class="stack-chip">WebAssembly</span>
+            </div>
+          </article>
+
+          <article class="project project-featured">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🌿</div>
+              <span class="project-tag">Graduation Project</span>
+              <div class="project-links">
+                <button class="app-store-coming-soon" type="button" aria-label="Alergia on the App Store">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.1M12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25"/></svg>
+                </button>
+              </div>
+            </div>
+            <h3>Alergia: AI Powered Mobile Assistant</h3>
+            <p>
+              AI-powered mobile assistant for people living with allergies. Ships a lightweight native
+              networking layer that handles concurrent requests to Groq AI and Google Pollen / Weather APIs,
+              driving responsive UI updates from volatile environmental data.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Swift</span>
+              <span class="stack-chip">UIKit</span>
+              <span class="stack-chip">MVVM</span>
+              <span class="stack-chip">Groq AI</span>
+              <span class="stack-chip">Google APIs</span>
+              <span class="stack-chip">Strategy Pattern</span>
+              <span class="stack-chip">POP</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🎮</div>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/GameVerse-iOS-App" target="_blank" rel="noopener" aria-label="GameVerse on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>GameVerse</h3>
+            <p>
+              Gaming discovery platform powered by the RAWG API — dynamic content loading, a custom
+              Navigable navigation strategy, and a local layer for wishlist management.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Swift</span>
+              <span class="stack-chip">UIKit</span>
+              <span class="stack-chip">MVVM</span>
+              <span class="stack-chip">Async/Await</span>
+              <span class="stack-chip">Modular Storyboards</span>
+              <span class="stack-chip">Kingfisher</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🎬</div>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/SwiftUI-for-iOS-Bootcamp-2025/tree/main/CineGoApp" target="_blank" rel="noopener" aria-label="CineGo on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>CineGo</h3>
+            <p>
+              SwiftUI movie discovery app with trending titles, detail views, search and clean state
+              management — my playground for exploring NavigationStack and modern SwiftUI patterns.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Swift</span>
+              <span class="stack-chip">SwiftUI</span>
+              <span class="stack-chip">MVVM</span>
+              <span class="stack-chip">NavigationStack</span>
+              <span class="stack-chip">REST</span>
+              <span class="stack-chip">LottieFiles</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🛍️</div>
+              <div class="project-links">
+                <a href="https://github.com/beyyzgur/SwiftCraft-iOS-Bootcamp-2025/tree/main/graduation-project" target="_blank" rel="noopener" aria-label="Luxuria on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.92.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.74 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.7 5.39-5.27 5.67.42.36.79 1.07.79 2.17v3.22c0 .31.21.68.79.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Luxuria</h3>
+            <p>
+              Minimal e-commerce app focused on product discovery — search by category or name, favorites,
+              cart. Built to explore Repository + Delegate patterns alongside RxSwift.
+            </p>
+            <div class="project-stack">
+              <span class="stack-chip">Swift</span>
+              <span class="stack-chip">UIKit</span>
+              <span class="stack-chip">MVVM</span>
+              <span class="stack-chip">Repository Pattern</span>
+              <span class="stack-chip">RxSwift</span>
+              <span class="stack-chip">Custom XIB Cells</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <div class="project-icon" aria-hidden="true">🚀</div>
+              <span class="project-tag">HitMaker</span>
+              <div class="project-links">
+                <a href="https://apps.apple.com/" target="_blank" rel="noopener" aria-label="Apps on the App Store">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3h5a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5v-2h5V5h-5V3zM3 12l7-7 1.4 1.4L6.8 11H15v2H6.8l4.6 4.6L10 19l-7-7z" transform="rotate(180 12 12)"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>App Store Contributions</h3>
+            <p>
+              During my HitMaker internship I shipped features into four live iOS products:
+            </p>
+            <ul class="app-list">
+              <li>
+                <a href="https://apps.apple.com/tr/app/glow-color-analysis/id6747744493" target="_blank" rel="noopener">
+                  <span class="app-name">Glow: Color Analysis</span>
+                  <span class="app-arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://apps.apple.com/tr/app/night-owl-sleep-tracker/id6748690247" target="_blank" rel="noopener">
+                  <span class="app-name">Night Owl: Sleep Tracker</span>
+                  <span class="app-arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://apps.apple.com/tr/app/zu-ai-ringtone-maker/id6749317668" target="_blank" rel="noopener">
+                  <span class="app-name">Zu: AI Ringtone Maker</span>
+                  <span class="app-arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://apps.apple.com/tr/app/debloat-ai-debloat-your-body/id6748082449" target="_blank" rel="noopener">
+                  <span class="app-name">Debloat AI: Debloat Your Body</span>
+                  <span class="app-arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────── Skills ─────────────── -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Toolkit</span>
+          <h2 class="section-title">The stack I reach for.</h2>
+          <p class="section-lead">
+            Deepest in the Apple ecosystem, but comfortable across Flutter, web and backend when the project
+            calls for it.
+          </p>
+        </div>
+
+        <div class="skills-grid reveal-stagger">
+          <div class="skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon" aria-hidden="true">📱</div>
+              <h3>iOS &amp; Apple</h3>
+            </div>
+            <div class="skill-list">
+              <span>Swift</span>
+              <span>UIKit</span>
+              <span>SwiftUI</span>
+              <span>MVVM</span>
+              <span>CoreData</span>
+              <span>RxSwift</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon" aria-hidden="true">🎯</div>
+              <h3>Cross-platform</h3>
+            </div>
+            <div class="skill-list">
+              <span>Flutter</span>
+              <span>Riverpod</span>
+              <span>Dart</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon" aria-hidden="true">🛠️</div>
+              <h3>Backend &amp; Data</h3>
+            </div>
+            <div class="skill-list">
+              <span>NestJS</span>
+              <span>Firebase</span>
+              <span>Supabase</span>
+              <span>PostgreSQL</span>
+              <span>MSSQL</span>
+              <span>SQLite</span>
+              <span>RESTful API</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon" aria-hidden="true">🌐</div>
+              <h3>Web</h3>
+            </div>
+            <div class="skill-list">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-header">
+              <div class="skill-group-icon" aria-hidden="true">⚙️</div>
+              <h3>Tooling &amp; Practice</h3>
+            </div>
+            <div class="skill-list">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Code Review</span>
+              <span>SOLID</span>
+              <span>DRY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────── Education & Community ─────────────── -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Education &amp; Community</span>
+          <h2 class="section-title">Learning and teaching - in parallel.</h2>
+        </div>
+
+        <div class="edu-grid reveal-stagger">
+          <div class="edu-card">
+            <div class="edu-icon" aria-hidden="true">🎓</div>
+            <h3>Computer Engineering, B.Sc.</h3>
+            <div class="edu-place">Pamukkale University</div>
+            <div class="edu-meta">Denizli, TR · Sept 2022 - Aug 2026 · GPA 3.23</div>
+            <p>Graduated by August 2026. Faculty of Engineering board member.</p>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon" aria-hidden="true">✈️</div>
+            <h3>Erasmus, Computer Science</h3>
+            <div class="edu-place">Politechnika Białostocka</div>
+            <div class="edu-meta">Białystok, Poland · 2023 / 2024 Spring</div>
+            <p>One semester exchange, expanding both my technical and cultural horizons.</p>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon" aria-hidden="true">🦉</div>
+            <h3>PauSiber, Core Team Member &amp; Lecturer</h3>
+            <div class="edu-place">Student community · Voluntary</div>
+            <div class="edu-meta">2023 - Present</div>
+            <p>Delivered Front end Lectures (2023–2024, 2024–2025) and led the iOS 101 Workshop in 2026 for students getting started with mobile development.</p>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon" aria-hidden="true">🌍</div>
+            <h3>Languages</h3>
+            <div class="edu-place">Turkish · English</div>
+            <div class="edu-meta">Native · Upper Intermediate</div>
+            <p>Comfortable in professional English - speaking, reading docs, code reviews, technical discussion and workshops.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────── Contact ─────────────── -->
+    <section id="contact">
+      <div class="container container-narrow">
+        <div class="contact-inner reveal">
+          <span class="section-eyebrow" style="justify-content:center;">Let's connect</span>
+          <h2>Have an iOS role or a project in mind?</h2>
+          <p>
+            I'm actively looking for iOS opportunities where I can keep growing as a mobile engineer.
+            The fastest way to reach me is a quick email. I'd be thrilled to hear from you! 🫶🏻
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:beyyzgur@gmail.com">
+              Say hi
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost" href="ayse-beyza-gur-portfolyo-cv-ios-developer.pdf" target="_blank" rel="noopener">
+              View resume
+            </a>
+          </div>
+
+          <div class="social-icons" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/beyyzgur/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="images/linked-in-alt.svg" alt="" /></a>
+            <a href="mailto:beyyzgur@gmail.com" aria-label="Email"><img src="images/gmail.svg" alt="" /></a>
+            <a href="https://github.com/beyyzgur" target="_blank" rel="noopener" aria-label="GitHub"><img src="images/github.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="app-store-toast" role="status" aria-live="polite">Coming soon to the App Store.</div>
+
+  <footer class="footer">
+    © 2026 · <a href="https://github.com/beyyzgur" target="_blank" rel="noopener">Ayse Beyza Gur</a> · Made with a lot of iced coffee 🧋
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
+
 </html>

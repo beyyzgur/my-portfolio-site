@@ -1,0 +1,18 @@
+/*
+ * Portfolio Site — Ayse Beyza Gur
+ *
+ * Architecture:
+ *   variables.css  → CSS custom properties (colors, spacing, typography)
+ *   base.css       → reset, typography, body
+ *   background.css → animated stars (kept intact from original)
+ *   layout.css     → containers, sections, grids
+ *   components.css → nav, hero, timeline, cards, chips, buttons, contact
+ *   responsive.css → media queries
+ */
+
+@import url('variables.css');
+@import url('base.css');
+@import url('background.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('responsive.css');
