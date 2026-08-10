@@ -611,6 +611,7 @@
 
 .project-tag {
   display: inline-block;
+  white-space: nowrap;
   font-size: 0.7rem;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
