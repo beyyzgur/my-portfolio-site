@@ -5,6 +5,7 @@
  *   3. Active section highlighting
  *   4. Mobile menu toggle
  *   5. Smooth close of mobile menu on link click
+ *   6. Hero typewriter animation
  */
 
 (() => {
@@ -24,7 +25,48 @@
   const sections = document.querySelectorAll('main section[id]');
   const appStoreButton = document.querySelector('.app-store-coming-soon');
   const appStoreToast = document.querySelector('.app-store-toast');
+  const typewriterText = document.querySelector('[data-typewriter]');
   let appStoreToastTimer;
+
+  /* ── Hero typewriter ────────────────────────────────── */
+  if (typewriterText && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const words = ['Beyza', 'iOS Developer'];
+    const typingDelay = 110;
+    const deletingDelay = 65;
+    const wordPause = 1800;
+    let wordIndex = 0;
+    let characterIndex = words[0].length;
+    let isDeleting = true;
+
+    const updateTypewriter = () => {
+      const currentWord = words[wordIndex];
+
+      if (isDeleting) {
+        characterIndex -= 1;
+      } else {
+        characterIndex += 1;
+      }
+
+      typewriterText.textContent = currentWord.slice(0, characterIndex);
+
+      if (isDeleting && characterIndex === 0) {
+        wordIndex = (wordIndex + 1) % words.length;
+        isDeleting = false;
+        window.setTimeout(updateTypewriter, typingDelay);
+        return;
+      }
+
+      if (!isDeleting && characterIndex === words[wordIndex].length) {
+        isDeleting = true;
+        window.setTimeout(updateTypewriter, wordPause);
+        return;
+      }
+
+      window.setTimeout(updateTypewriter, isDeleting ? deletingDelay : typingDelay);
+    };
+
+    window.setTimeout(updateTypewriter, wordPause);
+  }
 
   appStoreButton?.addEventListener('click', () => {
     appStoreToast?.classList.add('is-visible');

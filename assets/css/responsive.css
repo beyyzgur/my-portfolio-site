@@ -18,6 +18,26 @@
   }
 }
 
+@media (min-width: 1081px) {
+  .hero-inner {
+    position: relative;
+    left: 50%;
+    width: calc(100% + 10ch);
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-portrait {
+    order: -1;
+    max-width: 280px;
+  }
+}
+
 @media (max-width: 960px) {
   .hero-inner,
   .about-grid {
@@ -129,6 +149,10 @@
 }
 
 @media (max-width: 480px) {
+  .hero h1.hero-title {
+    font-size: clamp(1.65rem, 8.5vw, 2.5rem);
+  }
+
   .about-stats {
     grid-template-columns: 1fr;
   }
